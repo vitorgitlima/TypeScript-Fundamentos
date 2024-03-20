@@ -1,9 +1,9 @@
-const firstName = 'Vitor';
+const primeiroNome = 'Vitor';
 const anotherName = 1;
-const x = true;
+const xx = true;
 
-function greeting(name){
-    console.log('Olá,' + name)
+function greeting(nome: string) {
+    console.log('Olá,' + nome);
 }
 
 
@@ -15,4 +15,4 @@ function sumTWoNumbers(numeroA: number, numeroB: number){
 sumTWoNumbers(100,100);
 
 
-greeting(firstName)
+greeting(primeiroNome)
