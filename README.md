@@ -1,6 +1,6 @@
 # Curso de TypeScript
 
-Este repositório contém materiais e exemplos para um curso curto de TypeScript.
+Este repositório contém materiais e exemplos do curso de TypeScript.
 
 ## Sobre o Curso
 
