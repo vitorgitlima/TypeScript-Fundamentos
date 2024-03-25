@@ -17,10 +17,10 @@ function soma(a, b) {
 }
 soma(4, 5);
 // 5 - retorno de função
-function greeting(name) {
-    return `Olá ${name}`;
-}
-console.log(greeting("Vitor"));
+// function saudacao(name: string): string{
+//     return `Olá ${name}`
+// }
+// console.log(saudacao("Vitor"))
 // 6 - funcoes anonimas
 setTimeout(function () {
     const sallay = 1000;
@@ -34,3 +34,27 @@ function passCordinates(coord) {
 }
 const objCoord = { x: 329, y: 84.2 };
 passCordinates(objCoord);
+// - propriedades opcionais
+function showNumbers(a, b, c) {
+    console.log("A: " + a);
+    console.log("A: " + b);
+    console.log("A: " + c);
+}
+showNumbers(1, 2, 3);
+showNumbers(1, 2);
+// 9 - validando argumentos opcionais
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return `Olá, ${firstName} ${lastName}, tudo bem?`;
+    }
+    return `Olá, ${firstName}, tudo bem?`;
+}
+console.log(advancedGreeting("Vitor", "Lima"));
+console.log(advancedGreeting("Barley"));
+// 10 - union type
+function showBalance(balance) {
+    console.log(`O saldo da conta é  R$${balance}`);
+}
+showBalance(100);
+showBalance("500");
+const arr2 = [1, "teste", true];
