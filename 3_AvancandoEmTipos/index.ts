@@ -90,4 +90,105 @@ function showBalance(balance: string | number){
 showBalance(100)
 showBalance("500")
 
-const arr2: Array<number | string | boolean> = [1, "teste", true]
+// 11 - Avancando em union types
+function showUserRole(role: boolean | string){
+    if(typeof role == "boolean"){
+        return "Usuário não aprovado!"
+    }
+
+    return `A função do usuário é: ${role}`
+}
+
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
+
+// 12 - type alias
+type ID = string | number
+
+function showId(id: ID){
+    console.log(`O ID é: ${id}`);
+    
+}
+
+console.log(1)
+console.log("200") 
+
+
+// 13 - Interface
+interface Point{
+    x: number
+    y: number
+    z: number
+}
+
+function showCoords(obje: Point){
+    console.log(`X: ${obje.x} Y: ${obje.y} Z: ${obje.z}`);
+    
+}
+
+const coordObj: Point = {
+    x: 10,
+    y: 15,
+    z: 20
+}
+
+showCoords(coordObj)
+
+// 14 - interface vs type alias
+interface Person{
+    name: string
+}
+
+interface Person{
+    age: number
+}
+
+const somePerson: Person = {name: "Vitor", age: 29}
+
+type personType = {
+    name: string
+}
+
+// type personType = {
+//     age: string
+// } não permitido em type alias
+
+// 16 - Literal Types
+let test: "testando"
+
+test = "testando"
+
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center"){
+    console.log(`A direção escolhida é: ${direction}`);
+    
+}
+
+showDirection("left")
+
+// 16 - Non null assertion operators
+const p = document.getElementById("some-p")
+
+console.log(p!.innerText)
+
+// 17 - bigInt
+let n: bigint
+
+n = 1000n
+
+console.log(n)
+
+console.log(typeof n)
+
+console.log(n +  100n);
+
+// 18 - Symbol
+let symbolA:symbol = Symbol("a")
+let symbolB = Symbol("a")
+
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
+
+
+

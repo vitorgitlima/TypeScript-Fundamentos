@@ -57,4 +57,52 @@ function showBalance(balance) {
 }
 showBalance(100);
 showBalance("500");
-const arr2 = [1, "teste", true];
+// 11 - Avancando em union types
+function showUserRole(role) {
+    if (typeof role == "boolean") {
+        return "Usuário não aprovado!";
+    }
+    return `A função do usuário é: ${role}`;
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
+function showId(id) {
+    console.log(`O ID é: ${id}`);
+}
+console.log(1);
+console.log("200");
+function showCoords(obje) {
+    console.log(`X: ${obje.x} Y: ${obje.y} Z: ${obje.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 15,
+    z: 20
+};
+showCoords(coordObj);
+const somePerson = { name: "Vitor", age: 29 };
+// type personType = {
+//     age: string
+// } não permitido em type alias
+// 16 - Literal Types
+let test;
+test = "testando";
+console.log(test);
+function showDirection(direction) {
+    console.log(`A direção escolhida é: ${direction}`);
+}
+showDirection("left");
+// 16 - Non null assertion operators
+const p = document.getElementById("some-p");
+console.log(p.innerText);
+// 17 - bigInt
+let n;
+n = 1000n;
+console.log(n);
+console.log(typeof n);
+console.log(n + 100n);
+// 18 - Symbol
+let symbolA = Symbol("a");
+let symbolB = Symbol("a");
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
