@@ -101,7 +101,7 @@ n = 1000n;
 console.log(n);
 console.log(typeof n);
 console.log(n + 100n);
-// 18 - Symbol
+// 18 - Symbol. valores unicos
 let symbolA = Symbol("a");
 let symbolB = Symbol("a");
 console.log(symbolA == symbolB);

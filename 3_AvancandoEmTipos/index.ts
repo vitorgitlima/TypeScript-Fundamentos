@@ -183,7 +183,7 @@ console.log(typeof n)
 
 console.log(n +  100n);
 
-// 18 - Symbol
+// 18 - Symbol. valores unicos
 let symbolA:symbol = Symbol("a")
 let symbolB = Symbol("a")
 
