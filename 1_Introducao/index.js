@@ -2,7 +2,7 @@
 const primeiroNome = 'Vitor';
 const anotherName = 1;
 const xx = true;
-function greeting(nome) {
+function greeting1(nome) {
     console.log('Olá,' + nome);
 }
 function sumTWoNumbers(numeroA, numeroB) {
@@ -10,4 +10,4 @@ function sumTWoNumbers(numeroA, numeroB) {
     console.log("A Soma é: " + soma);
 }
 sumTWoNumbers(100, 100);
-greeting(primeiroNome);
+greeting1(primeiroNome);
